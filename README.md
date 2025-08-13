@@ -1,10 +1,16 @@
-# -Sentiment-Analysis
-Bi-LSTM Sentiment (Final Project)
-A small, end-to-end sentiment classifier for product reviews. It trains a Bi-LSTM on a 5% sample for quick iteration
+Final Project — BiLSTM Sentiment (Notebook + Saved Files)
+This repo is my final submission. It includes the notebook and the saved files needed to run predictions exactly as shown in the report.
 
-What’s here
-Bi-LSTM model with class weights
+What’s included (at repo root)
+notebook.ipynb — end-to-end workflow (prep → train on a small sample → eval → examples)
 
-Data prep + training script 
+bilstm.keras — trained model
 
-Model card and brief reflection
+tokenizer.json — tokenizer for text preprocessing
+
+maxlen.txt — max sequence length used during training (plain integer)
+
+model_card.json — brief model description, data notes, and metrics
+
+
+
