@@ -1,0 +1,29 @@
+{
+  "model_name": "BiLSTM_book_sentiment",
+  "created": "2025-08-13 11:41:48.397581",
+  "python": "3.10.13",
+  "framework": "tensorflow.keras",
+  "train_samples": 109875,
+  "test_samples": 27469,
+  "test_accuracy": 0.9189996123313904,
+  "intended_use": "Classify book review sentiment (binary).",
+  "out_of_scope": [
+    "non-English text without retraining",
+    "sarcasm/irony"
+  ],
+  "known_limitations": [
+    "Class imbalance (more positive than negative)",
+    "Threshold 0.5 may not be optimal",
+    "Performance depends on text length/vocabulary"
+  ],
+  "risk_mitigation": [
+    "Use class_weight or resampling",
+    "Keep validation split + early stopping",
+    "Retrain if data distribution shifts"
+  ],
+  "artifacts": {
+    "model": "bilstm.keras",
+    "tokenizer": "tokenizer.json",
+    "maxlen": "maxlen.txt"
+  }
+}
